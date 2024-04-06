@@ -1,0 +1,18 @@
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6IlNtaXRoIiwicGFzc3dvcmQiOiIxMTEiLCJpYXQiOjE3MTI0MjkwMzUsImV4cCI6MTcxMjQyOTA2NX0.BE1GaT0Nab5dVuTEeQgmKyPeqPp0BRkGEvxCiAc_0-4
+###
+POST http://localhost:3000/refresh HTTP/1.1
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6IlNtaXRoIiwicGFzc3dvcmQiOiIxMTEiLCJpYXQiOjE3MTI0Mjg5NDZ9.jQJOA2b7Q8zUxPClFJE3j0MuUbANtW70SYHSDhSQ6ck"
+
+}
+###
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Smith",
+    "password": "111"
+}
